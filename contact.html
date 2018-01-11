@@ -1,13 +1,14 @@
 <!DOCTYPE html><!-- HTML5 -->
 <html lang="en" dir="ltr">
 	<head>
-		<title>no work</title>
+		<title>contact</title>
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
-		<meta name="description" content="I do the talking" />
+		<meta name="description" content="Contact page for pios" />
 		<meta name="viewport" content="width=1097" />
 		<link rel="icon" href="favicon.png" type="image/png" />
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="node_modules/papercss/dist/paper.min.css" />
 		<link rel="stylesheet" type="text/css" href="style/style.css" media="screen,print" />
 		<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="style/ie.css" media="screen" /><![endif]-->
 		
@@ -17,49 +18,51 @@
     
 	<body>
         <nav>
-            <ul style=list-style-type:none>
+            <ul  id="menu-bar" style=list-style-type:none>
             <li><a href="index.html"><span>home</span></a></li>
             <li><a href="work.html"><span>work</span></a></li>
             <li><a href="no_work.html"><span>no work</span></a></li>
             <li class="active"><a href="contact.html"><span>contact me</span></a></li>
             </ul>    
-        </nav>
+        </nav
         
-        <main>        
-            <section class="bussinesscard">
-		<div class="bflip">
-			<div class="bfront">				
-
-				<div class="nametroduction">
-					<div class="name">piotr oszenda</div>
-					<div class="introduction">information developer</div>
-				</div>	
-				<div class="contact">						
-					<div class="website">
-						<span class="ion-earth"></span>
-						<a style="padding:1em 1.5em;color: black; text-align: center" href="http://pios.pl">http://pios.pl</a>
-					</div>				
-					<div class="phone ">
-						<span class="ion-ios7-telephone"></span> 
-						<a style="padding:1em 1.5em;color: black; text-align: center" href="tel:+48513082696">+48 513082696</a> 
+        <main>
+					<div class="row">
+						<div class="col-md-6" id="form_container">
+							<h2>Get in touch!</h2> 
+							<p> To get in touch, use this form:</p>
+							<form role="form" method="post" id="reused_form">
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="message"> Your message:</label>
+										<textarea type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="name"> Your name:</label>
+										<input type="text" id="name" name="name" required>
+									</div>
+									<div class="col-sm-6">
+										<label for="email"> Email:</label>
+										<input type="email" id="email" name="email" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<button type="submit">Send &rarr;</button>
+									</div>
+								</div>
+							</form>
+							<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your message successfully!</h3> </div>
+							<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+						</div>
 					</div>
-					<div class="email ">
-						<span class="ion-paper-airplane"></span>
-						<a style="padding:1em 1.5em;color: black; text-align: center" href="mailto:piotr.oszenda@outlook.com?subject=from your website">piotr.oszenda@outlook.com</a>
-					</div>
-				</div>						
-			</div>
-			<div class="bback"></div> <!--FIXES FONT RENDERING -->
-		</div>
-	</section>
             
-        </main>   
-        
-        <footer>&#9400; piotr oszenda</footer>
-    
-    <script type="text/javascript" 
-    src="typewriter.js"></script>
-    <noscript><div>requires JavaScript enabled</div></noscript>    
+        <div class="row">
+		<div class="align-bottom">&#9400; piotr oszenda</div>
+	</main> 
+        </body>
         
 	</body>
     

@@ -19,8 +19,7 @@ body{
   font-size: 16px; 
   height: calc(100vh - 6em);
   padding: 2em;
-  color: white;
-  font-family: 'Anonymous Pro', monospace;  
+  color: white;  
   background-color: black;  
 }
 
@@ -71,8 +70,137 @@ footer{
     white-space: nowrap;
     overflow: hidden; 
 }
-
-/* Animation */
+/* menu
+#menu-bar li {
+  margin: 0px 0px 6px 0px;
+  padding: 0px 6px 0px 6px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#menu-bar a {
+  font-weight: bold;
+  font-family: arial;
+  font-style: normal;
+  font-size: 12px;
+  color: #E7E5E5;
+  text-decoration: none;
+  display: block;
+  padding: 6px 20px 6px 20px;
+  margin: 0;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  text-shadow: 2px 2px 3px #000000;
+}
+#menu-bar li ul li a {
+  margin: 0;
+}
+#menu-bar .active a, #menu-bar li:hover > a {
+  background: #0399D4;
+  background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+  background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  color: #444444;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+#menu-bar ul li:hover a, #menu-bar li:hover li a {
+  background: none;
+  border: none;
+  color: #666;
+  -box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+#menu-bar ul a:hover {
+  background: #0399D4 !important;
+  background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+  background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  color: #FFFFFF !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+#menu-bar li:hover > ul {
+  display: block;
+}
+#menu-bar ul {
+  background: #DDDDDD;
+  background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+  background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: solid 1px #B4B4B4;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 3px #222222;
+  -moz-box-shadow: 2px 2px 3px #222222;
+  box-shadow: 2px 2px 3px #222222;
+}
+#menu-bar ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+#menu-bar ul a {
+  padding:10px 0px 10px 15px;
+  color:#424242 !important;
+  font-size:12px;
+  font-style:normal;
+  font-family:arial;
+  font-weight: normal;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+#menu-bar ul li:first-child > a {
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+}
+#menu-bar ul li:last-child > a {
+  border-bottom-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+}
+#menu-bar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#menu-bar {
+  display: inline-block;
+}
+  html[xmlns] #menu-bar {
+  display: block;
+}
+* html #menu-bar {
+  height: 1%;
+  
+/* Typewriter */
 .anim-typewriter{
   animation: typewriter 4s steps(42, end) 1s 1 normal both,
              blinkTextCursor 500ms steps(42, end) infinite normal;
@@ -101,11 +229,6 @@ footer{
 #typewriter{
 		font-size: 1.5em;
 		margin: 1em;
-
-		&:after{
-			content: "|";
-			animation: blink 500ms linear infinite alternate;
-		}
 }
 
 @-webkit-keyframes blink{
@@ -142,7 +265,7 @@ img:hover {
  
 }
 
-/*Animated menu*/
+/*Animated no-work menu*/
 
 .container {
     font-family: "Anonymous Pro", monospace;
@@ -153,8 +276,6 @@ img:hover {
     top: 70px;
 }
 
-
-/* basic menu styles */
 .block-menu {
 	display: inline-block;
 	background: black;
@@ -171,14 +292,13 @@ img:hover {
 	overflow: visible;
 }
 
-/* animation domination */
 .three-d {
 	perspective: 200px;
 	transition: all .07s linear;
 	position: relative;
 	cursor: pointer;
 }
-	/* complete the animation! */
+
 	.three-d:hover .three-d-box, 
 	.three-d:focus .three-d-box {
 		transform: translateZ(-25px) rotateX(90deg);
@@ -197,10 +317,6 @@ img:hover {
 	height: 100%;
 }
 
-/* 
-	put the "front" and "back" elements into place with CSS transforms, 
-	specifically translation and translatez
-*/
 .front {
 	transform: rotatex(0deg) translatez(25px);
 }
@@ -226,200 +342,5 @@ img:hover {
 
 .back {
   background: black;
-}
-
-/* business card */
-
-.bussinesscard {
-  height: 320px;
-  width: 550px;
-  overflow: hidden;
-  box-shadow: 0px 0px 43px -10px black;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.bussinesscard .bflip {
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.bussinesscard .bfront {
-  z-index: 11;
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  background: #fff;
-  box-shadow: 0px 0px 33px -1px rgba(0, 0, 0, 0.45);
-  -moz-transform: scale(1, 1);
-  -ms-transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
-  -moz-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.bussinesscard .bfront .top {
-  height: 50%;
-  background: #2a2b39;
-}
-.bussinesscard .bfront .top:after {
-  position: absolute;
-  content: '';
-  pointer-events: none;
-}
-.bussinesscard .bfront .top:after {
-  left: 50%;
-  width: 2em;
-  height: 2em;
-  -moz-transform: translateX(-50%) rotate(45deg);
-  -ms-transform: translateX(-50%) rotate(45deg);
-  -webkit-transform: translateX(-50%) rotate(45deg);
-  transform: translateX(-50%) rotate(45deg);
-  bottom: 9em;
-  z-index: 10;
-  background: inherit;
-}
-.bussinesscard .bfront .top .logo {
-  display: inline-block;
-  background: #6acd79;
-  color: #fff;
-  z-index: 11;
-  padding: .16em;
-  border: 8px solid #fff;
-  position: relative;
-  pointer-events: none;
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  left: 50%;
-  margin-top: .4em;
-  font-size: 4em;
-}
-.bussinesscard .front .top .logo .fat {
-  font-weight: 800;
-}
-.bussinesscard .bfront .top .logo .skinny {
-  font-weight: 100;
-}
-.bussinesscard .bfront .nametroduction {
-  margin-top: 2.4em;
-  -moz-transform: translateY(0);
-  -ms-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  z-index: 8;
-}
-.bussinesscard .bfront .name {
-  color: #2a2b39;
-  font-weight: 400;
-  font-size: 3.2em;
-  text-align: center;
-  position: relative;
-  margin-bottom: .35em;
-}
-.bussinesscard .bfront .name:after {
-  content: '';
-  position: absolute;
-  top: 1.3em;
-  width: 20%;
-  left: 40%;
-  right: 40%;
-  height: 1px;
-  background: #2a2b39;
-}
-.bussinesscard .bfront .introduction {
-  text-align: center;
-  color: #2a2b39;
-  font-family: 'Old Standard TT', serif;
-  font-style: italic;
-}
-.bussinesscard .bfront .contact {
-  color: #2a2b39;
-  margin-left: 1.7em;
-  font-weight: 300;
-  font-size: 1.6em;
-  -moz-transform: translateY(400%);
-  -ms-transform: translateY(400%);
-  -webkit-transform: translateY(400%);
-  transform: translateY(400%);
-}
-.bussinesscard .bfront .contact span {
-  color: #2D3244;
-  font-size: 1.7em;
-  width: 1.3em;
-  display: inline-block;
-}
-.bussinesscard .bfront .contact a {
-  position: relative;
-  bottom: .24em;
-}
-.bussinesscard .bback {
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  backface-visibility: hidden;
-  position: absolute;
-}
-
-.tooltip {
-  position: absolute;
-  left: 1em;
-  bottom: 1em;
-  color: #fff;
-  font-weight: 300;
-  padding: .4em;
-  background: #2a2b39;
-}
-
-/* HOVER ANIMATIONS */
-.bfront .top .logo, .front .top, .bfront .top:after, .bfront .nametroduction, .bfront .contact {
-  -moz-transition: 0.7s all ease-in-out;
-  -o-transition: 0.7s all ease-in-out;
-  -webkit-transition: 0.7s all ease-in-out;
-  transition: 0.7s all ease-in-out;
-}
-
-.bflip:hover .bfront .top .logo {
-  margin-top: .28em;
-  font-size: 1.3em;
-  border: 3px solid #fff;
-  margin-left: .15em;
-  -moz-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  left: 0;
-}
-
-.bflip:hover .bfront .top {
-  height: 15%;
-}
-.bflip:hover .bfront .top:after {
-  width: 1.5em;
-  height: 1.5em;
-  bottom: 16.3em;
-}
-
-.bflip:hover .bfront .nametroduction {
-  -moz-transform: translateY(400%);
-  -ms-transform: translateY(400%);
-  -webkit-transform: translateY(400%);
-  transform: translateY(400%);
-}
-
-.bflip:hover .bfront .contact {
-  -moz-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  -webkit-transform: translateY(-52%);
-  transform: translateY(-52%);
 }
 

@@ -4,29 +4,31 @@
 		<title>home</title>
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
-		<meta name="description" content="I do the talking" />
-		<meta name="viewport" content="width=1097" />
-		<link rel="icon" href="favicon.png" type="image/png" />
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="style/style.css" media="screen,print" />
+		<meta name="description" content="homepage, 'technical writer', project, 'hello world'" />
+        <link rel="icon" href="favicon.png" type="image/png" />
+        <meta name="viewport" content="width=1097" />
+        <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+        <link rel="stylesheet" type="text/css" href="node_modules/papercss/dist/paper.min.css" />
+        <link rel="stylesheet" type="text/css" href="style/style.css" media="screen,print" />
 		<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="style/ie.css" media="screen" /><![endif]-->
 		
 		<script type="text/javascript" src="res/jquery.js?31"></script>
-		<script type="text/javascript" src="res/x5engine.js?31"></script>
+		<!-- <script type="text/javascript" src="res/x5engine.js?31"></script> -->
 	</head>
     
     <body>
         <nav>
-            <ul style=list-style-type:none>
-            <li class="active"><a href="index.html"><span>home</span></a></li>
-            <li><a href="work.html"><span>work</span></a></li>
-            <li><a href="no_work.html"><span>no work</span></a></li>
-            <li><a href="contact.html"><span>contact me</span></a></li>
+            <ul>
+            <li class="active"><a href="index.html">home</a></li>
+            <li><a href="work.html">work</a></li>
+            <li><a href="no_work.html">no work</a></li>
+            <li><a href="contact.html">contact me</a></li>
             </ul>    
         </nav>
+
         <main>        
             <pre id="typewriter">
-            hello world. it's me.
+            <span class="string-highlight">hello, world!</span>
             </pre>
         </main>   
         
