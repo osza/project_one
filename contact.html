@@ -1,0 +1,64 @@
+<!DOCTYPE html><!-- HTML5 -->
+<html lang="en" dir="ltr">
+	<head>
+		<title>contact</title>
+		<meta charset="utf-8" />
+		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
+		<meta name="description" content="Contact page for pios" />
+		<meta name="viewport" content="width=1097" />
+		<link rel="icon" href="favicon.png" type="image/png" />
+		<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="node_modules/papercss/dist/paper.min.css" />
+		<link rel="stylesheet" type="text/css" href="style/style.css" media="screen,print" />
+		<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="style/ie.css" media="screen" /><![endif]-->
+		
+		<script type="text/javascript" src="res/jquery.js?31"></script>
+		<script type="text/javascript" src="typewriter.js"></script>
+	</head>
+    
+	<body>
+        <nav>
+            <ul class="topnav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="work.html">work</a></li>
+            <li><a href="no_work.html">no work</a></li>
+            <li class="active"><a href="contact.html">contact me</a></li>
+            </ul>    
+        </nav
+        
+        <main>
+					<div class="row">
+						<div class="col-md-6" id="form_container">
+							<h2>Get in touch!</h2> 
+							<p> To get in touch, use this form:</p>
+							<form role="form" method="post" id="reused_form">
+								<div class="row">
+									<div class="col-sm-12">
+										<label for="message"> Your message:</label>
+										<textarea type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<label for="name"> Your name:</label>
+										<input type="text" id="name" name="name" required>
+									</div>
+									<div class="col-sm-6">
+										<label for="email"> Email:</label>
+										<input type="email" id="email" name="email" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<button type="submit">Send &rarr;</button>
+									</div>
+								</div>
+							</form>
+							<div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your message successfully!</h3> </div>
+							<div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+						</div>
+					</div>
+	</main>       
+	</body>
+    
+</html>
